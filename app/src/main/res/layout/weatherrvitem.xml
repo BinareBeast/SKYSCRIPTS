@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_margin="4dp"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="15dp"
+    android:background="@android:color/transparent"
+    android:layout_height="300dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cardshape">
+
+            <TextView
+                android:id="@+id/timetv"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Time"
+                android:textColor="@color/white" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:id="@+id/temperaturetv"
+                android:gravity="center"
+                android:padding="4dp"
+                android:textColor="@color/white"
+                android:text="20"
+                android:layout_below="@id/timetv"/>
+
+            <ImageView
+                android:id="@+id/ivcondition"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/temperaturetv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="4dp"
+                android:src="@mipmap/ic_launcher" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/windspeed"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/ivcondition"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="13"
+                android:textColor="@color/white"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
